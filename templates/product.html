@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Productlar royxati</h1>
+<a href="{% url 'odamlar' %}"><p>Link</p></a>
+{% for product in productlar %}
+<h1>Nomi : {{product.nomi}}<h1>
+  <p>Narxi : {{product.narxi}}</p>
+<p>Sort : {{product.sort}}</p>
+ <p> Date : {{product.date}}<p>
+<p>Bio : {{product.bio}}</p>
+{% endfor %}
+</body>
+</html>

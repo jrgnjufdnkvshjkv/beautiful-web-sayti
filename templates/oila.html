@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Oilalar royxati</h1>
+{% for oila in oilalar %}
+<h1>Ismi : {{oila.ismi}}<h1>
+    <p>Familyasi: {{oila.familyasi}}</p>
+<p>Yili : {{oila.yili}}</p>
+ <p> Yoshi : {{oila.yoshi}}<p>
+<p>Bio : {{oila.bio}}</p>
+{% endfor %}
+</body>
+</html>

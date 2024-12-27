@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>$Title$</title>
+  <link href="{% static 'css/odam.css' %}" rel ="stylesheet">
+</head>
+<body>
+<h1> Odamlar royxati</h1>
+<a href="{% url 'product' %}"><p>Link</p></a>
+{% for odam in odamlar %}
+<h1>Ism : {{odam.name}}<h1>
+  <p>Familya : {{odam.surname}}</p>
+<p>Yosh : {{odam.age}}</p>
+<p>Bio : {{odam.bio}}</p>
+</p>
+{% endfor %}
+</body>
+</html>
